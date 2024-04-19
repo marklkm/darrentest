@@ -170,3 +170,9 @@ h6 {
   color: #000000;
   
 }
+
+
+/* custom im space */
+.custom-padding {
+  padding: 20px; /* Or any other value */
+}
