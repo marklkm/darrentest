@@ -8,10 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -1061,50 +1058,51 @@
       <h2 class="h5 mb-4">I look forward to hearing from you.</h2>
     </div>
     
-    <!-- Contact Form -->
-    <section aria-labelledby="contact-form-heading">
-      <div class="container my-5">
-        <form>
-          <!-- Name Field -->
-          <div class="mb-3">
-            <label for="nameInput" class="form-label">Name</label>
-            <input type="text" class="form-control" id="nameInput" required>
-          </div>
-          <!-- Email Field -->
-          <div class="mb-3">
-            <label for="emailInput" class="form-label">Email</label>
-            <input type="email" class="form-control" id="emailInput" required>
-          </div>
-          <!-- Phone Field -->
-          <div class="mb-3">
-            <label for="phoneInput" class="form-label">Phone</label>
-            <input type="tel" class="form-control" id="phoneInput">
-          </div>
-          <!-- Identity Issue Dropdown -->
-          <div class="mb-3">
-            <label for="identityIssueSelect" class="form-label">Identity Issue</label>
-            <select id="identityIssueSelect" class="form-select" required>
-              <option value="">Select an Issue</option>
-              <option value="race-culture">Race and Culture</option>
-              <option value="neurodiversity">Neurodiversity</option>
-              <option value="lgbtq">LGBTQ+</option>
-              <option value="aces">ACEs</option>
-              <option value="spiritual">Spiritual</option>
-              <option value="not-sure">Not Sure</option>
-            </select>
-          </div>
-          <!-- Message Field -->
-          <div class="mb-3">
-            <label for="messageTextarea" class="form-label">Message</label>
-            <textarea class="form-control" id="messageTextarea" rows="4" required></textarea>
-          </div>
-          <!-- Submit Button -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-        </form>
+<!-- Contact Form -->
+<section aria-labelledby="contact-form-heading">
+  <div class="container my-5">
+    <form action="https://formspree.io/f/{form_id}" method="POST">
+      <!-- Name Field -->
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" id="nameInput" name="name" required>
       </div>
-    </section>
+      <!-- Email Field -->
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailInput" name="_replyto" required>
+      </div>
+      <!-- Phone Field -->
+      <div class="mb-3">
+        <label for="phoneInput" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phoneInput" name="phone">
+      </div>
+      <!-- Identity Issue Dropdown -->
+      <div class="mb-3">
+        <label for="identityIssueSelect" class="form-label">Identity Issue</label>
+        <select id="identityIssueSelect" class="form-select" name="identity_issue" required>
+          <option value="">Select an Issue</option>
+          <option value="race-culture">Race and Culture</option>
+          <option value="neurodiversity">Neurodiversity</option>
+          <option value="lgbtq">LGBTQ+</option>
+          <option value="aces">ACEs</option>
+          <option value="spiritual">Spiritual</option>
+          <option value="not-sure">Not Sure</option>
+        </select>
+      </div>
+      <!-- Message Field -->
+      <div class="mb-3">
+        <label for="messageTextarea" class="form-label">Message</label>
+        <textarea class="form-control" id="messageTextarea" name="message" rows="4" required></textarea>
+      </div>
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
     
     <!-- Contact Information -->
