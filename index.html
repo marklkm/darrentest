@@ -1217,7 +1217,8 @@
             <p class="text-normal mb-4">My Social Media</p>
             <!-- Image -->
             <a href="https://www.instagram.com/darren_peters369/" target="_blank">
-              <img src="images/twitter.png" alt="X social icon" class="img-fluid" />
+              
+            <img src="images/twitter.png" alt="X social icon" class="img-fluid" />
             </a>
             <a href="https://www.threads.net/@darren_peters369" target="_blank">
               <img src="images/threads.png" alt="Threads social icon" class="img-fluid" />
@@ -1229,47 +1230,30 @@
     </footer>
 
         <!-- Back to top of page button -->
-        <button
-        type="button"
-        class="btn btn-primary"
-        id="topButton"
-        aria-label="Go to top of page"
-        style="position: fixed; bottom: 20px; right: 20px; display: none"
-      >
-      Top
-      </button>
+<!-- Back to Top Button -->
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-secondary position-fixed bottom-0 end-0 m-3" aria-label="Back to Top">
+  <i class="bi bi-arrow-up"></i> Top
+</button>
+
 
     </div>
     <!-- JS script for top of page button -->
     <script>
-      document.addEventListener("scroll", function () {
-        var scrollPosition =
-          window.scrollY || document.documentElement.scrollTop;
-        var button = document.getElementById("topButton");
-        if (scrollPosition > 100) {
-          button.style.display = "block"; // Show the button
+      // Get the button
+      var mybutton = document.getElementById("backToTopBtn");
+    
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
         } else {
-          button.style.display = "none"; // Hide the button
+          mybutton.style.display = "none";
         }
-      });
-
-      document
-        .getElementById("topButton")
-        .addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth", // Optional: for smooth scrolling
-          });
-        });
-    </script>
-    <script>
-      try {
-        console.log("loaded ally.js in version", ally.version);
-        console.log("focusable elements", ally.query.focusable());
-      } catch (error) {
-        console.error("Error loading or executing ally.js functions", error);
       }
     </script>
+    
 
 
     <!-- Accessibility buttons -->

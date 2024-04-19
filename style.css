@@ -176,3 +176,11 @@ h6 {
 .custom-padding {
   padding: 20px; /* Or any other value */
 }
+
+
+/* back to top button */
+
+#backToTopBtn {
+  display: none;
+  z-index: 100; 
+}
