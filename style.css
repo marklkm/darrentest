@@ -162,3 +162,11 @@ h6 {
   filter: invert(1) hue-rotate(50deg);
   /* Additional high-contrast styling as needed */
 }
+
+
+/* Blockquote font */
+.custom-font-size {
+  font-size: 1.25rem; /* Adjust the size as needed */
+  color: #000000;
+  
+}
