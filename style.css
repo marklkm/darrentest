@@ -158,10 +158,36 @@ h6 {
 
 /* Accessibility buttons */
 
+/* Apply high contrast only to text and backgrounds, not images */
 .high-contrast {
-  filter: invert(1) hue-rotate(50deg);
-  /* Additional high-contrast styling as needed */
+  background-color: #000 !important;
+  color: #fff !important;
 }
+
+.high-contrast body,
+.high-contrast .navbar,
+.high-contrast p,
+.high-contrast .nav-link,
+.high-contrast footer,
+.high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast h5, .high-contrast h6 {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast img {
+  filter: none !important; /* Ensure images are not affected */
+}
+
+/* Larger Font Styles */
+.large-font {
+  font-size: 20px !important; /* Apply a larger base font size */
+}
+
+.large-font p, .large-font h1, .large-font h2, .large-font h3, .large-font h4, .large-font h5, .large-font h6 {
+  font-size: inherit; /* Ensure all text elements increase in size */
+}
+
+
 
 
 /* Blockquote font */
@@ -181,6 +207,9 @@ h6 {
 /* back to top button */
 
 #backToTopBtn {
-  display: none;
-  z-index: 100; 
+  position: fixed;
+  bottom: 20px;  /* 20 pixels from the bottom */
+  right: 20px;   /* 20 pixels from the right */
+  display: none; /* Hidden by default, shown when relevant */
+  z-index: 1000; /* High z-index to keep it above other content */
 }

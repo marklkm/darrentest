@@ -110,21 +110,17 @@
       <!-- Home section -->
 
       <!-- Accessibility button -->
-      <section aria-labelledby="accessibility-heading" class="bg-light py-4">
-        <div class="container">
-          <!-- Heading for the section -->
-          <h2 id="accessibility-heading" class="text-center mb-3">Accessibility Options</h2>
-          <!-- Buttons for accessibility features -->
-          <div class="d-flex justify-content-center gap-2">
-            <button id="toggleContrast" class="btn btn-secondary" aria-pressed="false" onclick="toggleHighContrast()">
-              Toggle High Contrast
-            </button>
-            <button id="toggleFontSize" class="btn btn-secondary" aria-pressed="false" onclick="increaseFontSize()">
-              Increase Font Size
-            </button>
+      <div class="container mt-5">
+        <div class="text-center mb-4">
+          <h2 id="accessibility-options" class="mb-3">Accessibility Options</h2>
+          <div class="d-flex justify-content-center gap-3">
+            <button id="toggleContrast" class="btn btn-secondary px-4" onclick="toggleHighContrast()">Toggle High Contrast</button>
+            <button id="toggleFontSize" class="btn btn-secondary px-4" onclick="increaseFontSize()">Increase Font Size</button>
           </div>
         </div>
-      </section>
+      </div>
+      
+      
 
 
       <section id="home" class="container my-5">
@@ -237,7 +233,7 @@
 
 
               <button
-              class="btn btn-primary mt-3 mb-3" 
+              class="btn btn-dark mt-3 mb-3" 
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseNeurodiversity" 
@@ -381,7 +377,7 @@
 
 
               <button
-              class="btn btn-primary mt-3 mb-3" 
+              class="btn btn-dark mt-3 mb-3" 
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseAscension" 
@@ -531,7 +527,7 @@
                 </p>
              
                 <button
-                class="btn btn-primary mt-3 mb-3" 
+                class="btn btn-dark mt-3 mb-3" 
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseRace" 
@@ -663,7 +659,7 @@
 
 
                 <button
-                class="btn btn-primary mt-3 mb-3" 
+                class="btn btn-dark mt-3 mb-3" 
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseLGBT" 
@@ -794,7 +790,7 @@
 
 
                     <button
-                    class="btn btn-primary mt-3 mb-3" 
+                    class="btn btn-dark mt-3 mb-3" 
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseACE"
@@ -1173,7 +1169,7 @@
     <!-- Back to top of page button -->
     <button
       type="button"
-      class="btn btn-primary btn-lg"
+      class="btn btn-primary"
       id="topButton"
       aria-label="Go to top of page"
       style="position: fixed; bottom: 20px; right: 20px; display: none"
@@ -1217,7 +1213,7 @@
             <p class="text-normal mb-4">My Social Media</p>
             <!-- Image -->
             <a href="https://www.instagram.com/darren_peters369/" target="_blank">
-              
+
             <img src="images/twitter.png" alt="X social icon" class="img-fluid" />
             </a>
             <a href="https://www.threads.net/@darren_peters369" target="_blank">
@@ -1229,50 +1225,44 @@
       </div>
     </footer>
 
-        <!-- Back to top of page button -->
-<!-- Back to Top Button -->
-<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-secondary position-fixed bottom-0 end-0 m-3" aria-label="Back to Top">
-  <i class="bi bi-arrow-up"></i> Top
-</button>
+
+    <button id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-secondary position-fixed bottom-0 end-0 m-3" aria-label="Back to Top">
+      <i class="bi bi-arrow-up"></i> Top
+    </button>
 
 
     </div>
     <!-- JS script for top of page button -->
+
     <script>
-      // Get the button
-      var mybutton = document.getElementById("backToTopBtn");
-    
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-    
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var mybutton = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
     </script>
-    
 
 
     <!-- Accessibility buttons -->
 
     <script>
-      // Function to toggle high contrast
-      function toggleHighContrast() {
-        document.body.classList.toggle("high-contrast");
-      }
+function toggleHighContrast() {
+  var body = document.body;
+  body.classList.toggle('high-contrast'); // Toggle high contrast mode
+}
 
-      // Function to increase font size
-      function increaseFontSize() {
-        // Get the current font size
-        let currentSize = parseInt(
-          window.getComputedStyle(document.body).fontSize
-        );
-        // Increase font size
-        document.body.style.fontSize = `${currentSize + 1}px`;
-      }
-    </script>
+function increaseFontSize() {
+  var body = document.body;
+  body.classList.toggle('large-font'); // Toggle larger font size
+}
+
+      </script>
+
   </body>
 </html>
