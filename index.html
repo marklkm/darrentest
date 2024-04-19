@@ -1180,53 +1180,46 @@
 
     <!-- Footer -->
 
-    <footer
-      class="text-center text-lg-start py-3"
-      style="background-color: black; color: white; width: 100%"
-    >
+    <footer class="bg-dark text-white text-center text-lg-start py-3">
       <div class="container">
         <!-- Grid container -->
         <div class="row">
-          <!-- Grid column for logo -->
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-            <a class="navbar-brand" href="#">
-              <span class="text-white" style="font-size: 1em; font-weight: bold;">Darren Peters</span>
-            </a>
+          <!-- Grid column for logo and contact -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="py-2">
+              <a class="navbar-brand text-white" href="#" aria-label="Homepage">
+                <strong>Darren Peters</strong>
+              </a>
+              <p>London, England</p>
+              <a href="mailto:info@darrenpeters.uk" class="text-reset" style="text-decoration: underline;">
+                info@darrenpeters.uk
+              </a>
+            </div>
           </div>
-          <!-- Grid column for address -->
-          <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
-
-            <p>
-              London, England<br />
           
-              <a
-                href="mailto:info@darrenpeters.uk"
-                class="text-white"
-                style="text-decoration: none"
-                >info@darrenpeters.uk</a
-              >
-            </p>
+          <!-- Grid column for copyright -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="py-2">
+              <p>Copyright © 2024 DarrenPeters.uk</p>
+            </div>
           </div>
-          <!-- Grid column for copyright text -->
-          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-            <p>Copyright @ 2024 DarrenPeters.uk</p>
-          </div>
-          <!-- Grid column for social media -->
-          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
-            <p class="text-normal mb-4">My Social Media</p>
-            <!-- Image -->
-            <a href="https://www.instagram.com/darren_peters369/" target="_blank">
-
-            <img src="images/twitter.png" alt="X social icon" class="img-fluid" />
-            </a>
-            <a href="https://www.threads.net/@darren_peters369" target="_blank">
-              <img src="images/threads.png" alt="Threads social icon" class="img-fluid" />
-            </a>
+          
+          <!-- Grid column for social media links -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="py-2">
+              <p>Follow us:</p>
+              <a href="https://www.instagram.com/darren_peters369/" class="text-white me-2" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.threads.net/@darren_peters369" class="text-white" target="_blank" aria-label="Threads">
+                <i class="bi bi-threads"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <!-- Grid container -->
       </div>
     </footer>
+    
 
 
     <button id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary position-fixed bottom-0 end-0 m-3" aria-label="Back to Top">
