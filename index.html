@@ -1162,14 +1162,20 @@
         </section>
       </section>
     </div>
-    <section class="text-center container-fluid mt-3 bg-light p-3" style="background-image: url('images/home.jpeg'); background-size: cover; background-position: center;">
-      <div class="d-flex h-100 align-items-center justify-content-center">
-        <div class="bg-opacity-75 bg-dark p-4 rounded">
-          <h3 class="text-white" id="call-to-action">Let's take the next step together</h3>
-          <a href="#contact" class="btn btn-light btn-lg mt-3" role="button" aria-describedby="call-to-action">Contact Darren</a>
+
+    <section class="text-center container-fluid mt-3 p-3" style="background-image: url('images/home.jpeg'); background-size: cover; background-position: center; position: relative;">
+      <!-- Dark overlay to enhance text contrast -->
+      <div class="position-absolute top-0 bottom-0 start-0 end-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+      
+      <div class="d-flex h-100 align-items-center justify-content-center position-relative">
+        <div class="p-4 rounded text-white">
+          <h2 id="call-to-action">Let's take the next step together</h2>
+          <a href="#contact" class="btn btn-primary btn-lg mt-3" role="button" aria-describedby="call-to-action">Contact Darren</a>
         </div>
       </div>
     </section>
+    
+    
     
     <!-- Back to top of page button -->
     <button
