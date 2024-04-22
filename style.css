@@ -145,7 +145,7 @@ h6 {
   
 }
 
-p,  .blockquote-footer {
+.fig-caption, .blockquote-footer {
   color: #000000 !important;
 }
 
