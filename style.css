@@ -153,38 +153,7 @@ h6 {
 
 /* Ensure the text is not too small on mobile */
 .carousel-item p {
-  font-size: 16px;  /* minimum font size for readability on small devices */
-}
-
-/* Accessibility buttons */
-
-/* Apply high contrast only to text and backgrounds, not images */
-.high-contrast {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.high-contrast body,
-.high-contrast .navbar,
-.high-contrast p,
-.high-contrast .nav-link,
-.high-contrast footer,
-.high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast h5, .high-contrast h6 {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.high-contrast img {
-  filter: none !important; /* Ensure images are not affected */
-}
-
-/* Larger Font Styles */
-.large-font {
-  font-size: 20px !important; /* Apply a larger base font size */
-}
-
-.large-font p, .large-font h1, .large-font h2, .large-font h3, .large-font h4, .large-font h5, .large-font h6 {
-  font-size: inherit; /* Ensure all text elements increase in size */
+  font-size: 18px;  /* minimum font size for readability on small devices */
 }
 
 
