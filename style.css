@@ -14,28 +14,7 @@ html, body {
 }
 
 
-.leaflet-container {
-    height: 800px;
-    width: 1200px;
-    max-width: 100%;
-    max-height: 100%;
-}
 
-/* High Contrast Styles */
-.high-contrast {
-    color: #fff;
-    background-color: #000;
-  }
-  
-  /* Larger Font Styles */
-  .large-font {
-    font-size: 20px;
-  }
-
-  /* Responsive map height */
-#map {
-  height: 50vh; /* Adjust based on your needs */
-}
 
 /* Example media query for devices with a max-width of 600px */
 @media (max-width: 600px) {
