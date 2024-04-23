@@ -83,6 +83,11 @@ p {
   font-size: 19px;
 }
 
+.custom-paragraph {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+}
 
 h6 {
   font-weight: bold;
