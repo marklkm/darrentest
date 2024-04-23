@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,17 +22,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <!-- JS Scripts-->
-    <script src="mapScript.js" defer></script>
+
     <script src="lazysizes.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/ally.js/1.4.1/ally.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/a11y.js@2.2.1"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
     <!-- CSS style for top of page button -->
+
     <style>
       /* Optional: Hide the button by default and only show after scrolling down 100px */
       #topButton {
@@ -46,14 +45,15 @@
         border-color: #007bff;
       }
     </style>
-
   </head>
   <body>
     <!-- Navbar with Logo -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <span class="text-white" style="font-size: 1.5em; font-weight: bold;">Darren Peters</span>
+          <span class="text-white" style="font-size: 1.5em; font-weight: bold"
+            >Darren Peters</span
+          >
         </a>
         <!-- Toggle button for mobile menu -->
         <button
@@ -88,28 +88,25 @@
         </div>
       </div>
     </nav>
-    
+    <!-- End Navbar -->
     <!-- Page Container -->
     <div class="container">
       <!-- Home section -->
-
-      <h1 class="text-center mt-5">Your Safe Space for Holistic Psychotherapy</h1>
-
       <section id="home" class="container my-5">
-    
-        
-      
+        <h1 class="text-center mt-5">
+          Your Safe Space for Holistic Psychotherapy
+        </h1>
         <div class="row justify-content-center mt-3">
           <div class="col-sm-12 col-md-8">
-            <img src="images/PeacefulWallpaper.jpeg" 
-            alt="A peaceful scene with calm waters and a serene landscape, promoting relaxation" 
-            class="lazyload img-fluid"
-            style="width: 100%; height: auto;">
+            <img
+              src="images/PeacefulWallpaper.jpeg"
+              alt="A peaceful scene with calm waters and a serene landscape, promoting relaxation"
+              class="lazyload img-fluid"
+              style="width: 100%; height: auto"
+            />
           </div>
         </div>
       </section>
-    
-      
       <section>
         <section class="container my-5">
           <!-- Intro 1 -->
@@ -117,7 +114,6 @@
             <!-- Text column (8 units wide) -->
             <h2 class="mb-4">Welcome to my Psychotherapy Practice</h2>
             <div class="col-md-8">
-             
               <p class="lead">
                 I offer a holistic and inclusive approach to mental health and
                 well-being. My name is <strong>Darren Peters</strong>, and I
@@ -189,11 +185,9 @@
             </div>
           </div>
         </section>
-
-        <hr />
+        <hr class="hr" />
         <section id="specialities" class="container my-5">
           <h2 class="text-center mb-4">My Specialty Areas</h2>
-        
           <!-- Neurodiversity Section -->
           <div class="row">
             <!-- Left column with image, heading, text, and Read More button (8 units wide) -->
@@ -210,20 +204,17 @@
                 Celebrating Uniqueness and Building Strengths.
               </p>
               <!-- Button trigger for collapsible content -->
-
-
               <button
-              class="btn btn-dark mt-3 mb-3" 
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseNeurodiversity" 
-              aria-expanded="false"
-              aria-controls="collapseNeurodiversity"
-            >
-              Read More <!-- Removed brackets for clarity and accessibility -->
-            </button>
-
-
+                class="btn btn-dark mt-3 mb-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNeurodiversity"
+                aria-expanded="false"
+                aria-controls="collapseNeurodiversity"
+              >
+                Read More
+                <!-- Removed brackets for clarity and accessibility -->
+              </button>
               <!-- Collapsible content -->
               <div class="collapse" id="collapseNeurodiversity">
                 <h4 class="align-center">Neurodivergent Minds</h4>
@@ -356,19 +347,17 @@
                 Transpersonal Psychotherapy and Ascension Activation.
               </p>
               <!-- Button trigger for collapsible content -->
-
-
               <button
-              class="btn btn-dark mt-3 mb-3" 
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseAscension" 
-              aria-expanded="false"
-              aria-controls="collapseAscension"
-            >
-              Read More <!-- Removed brackets for clarity and accessibility -->
-            </button>
-
+                class="btn btn-dark mt-3 mb-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseAscension"
+                aria-expanded="false"
+                aria-controls="collapseAscension"
+              >
+                Read More
+                <!-- Removed brackets for clarity and accessibility -->
+              </button>
               <!-- Collapsible content -->
               <div class="collapse" id="collapseAscension">
                 <h4 class="align-center">Ascension/Spiritual Identity</h4>
@@ -509,18 +498,17 @@
                   Healing: Fostering Empathy and Building Allyship in a Divisive
                   World.
                 </p>
-             
                 <button
-                class="btn btn-dark mt-3 mb-3" 
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRace" 
-                aria-expanded="false"
-                aria-controls="collapseRace"
-              >
-                Read More <!-- Removed brackets for clarity and accessibility -->
-              </button>
-              
+                  class="btn btn-dark mt-3 mb-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRace"
+                  aria-expanded="false"
+                  aria-controls="collapseRace"
+                >
+                  Read More
+                  <!-- Removed brackets for clarity and accessibility -->
+                </button>
                 <!-- Collapsible content -->
                 <div class="collapse" id="collapseRace">
                   <h4 class="align-center">
@@ -642,21 +630,17 @@
                   Transpersonal Psychotherapy and Ascension Activation.
                 </p>
                 <!-- Button trigger for collapsible content -->
-
-
                 <button
-                class="btn btn-dark mt-3 mb-3" 
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseLGBT" 
-                aria-expanded="false"
-                aria-controls="collapseLGBT"
-              >
-                Read More <!-- Removed brackets for clarity and accessibility -->
-              </button>
-
-
-
+                  class="btn btn-dark mt-3 mb-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseLGBT"
+                  aria-expanded="false"
+                  aria-controls="collapseLGBT"
+                >
+                  Read More
+                  <!-- Removed brackets for clarity and accessibility -->
+                </button>
                 <!-- Collapsible content -->
                 <div class="collapse" id="collapseLGBT">
                   <h4 class="align-center">LGBTQ Identity</h4>
@@ -774,20 +758,17 @@
                       Experiences (ACEs)
                     </p>
                     <!-- Button trigger for collapsible content -->
-
-
-
                     <button
-                    class="btn btn-dark mt-3 mb-3" 
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseACE"
-                    aria-expanded="false"
-                    aria-controls="collapseACE"
-                  >
-                    Read More <!-- Removed brackets for clarity and accessibility -->
-                  </button>
-
+                      class="btn btn-dark mt-3 mb-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseACE"
+                      aria-expanded="false"
+                      aria-controls="collapseACE"
+                    >
+                      Read More
+                      <!-- Removed brackets for clarity and accessibility -->
+                    </button>
                     <!-- Collapsible content -->
                     <div class="collapse" id="collapseACE">
                       <h4 class="align-center">
@@ -891,7 +872,7 @@
             </div>
           </div>
         </section>
-        <hr />
+        <hr class="hr" />
         <!-- Welcome section -->
         <section id="welcome" class="container my-5">
           <div class="row">
@@ -912,10 +893,10 @@
             </div>
             <!-- Right column with text (6 units wide) -->
             <div class="col-lg-6">
-         
               <h3>Welcome!</h3>
-              <p class="custom-paragraph">My Experience, Skills and Qualifications</p>
-           
+              <p class="custom-paragraph">
+                My Experience, Skills and Qualifications
+              </p>
               <p>
                 I bring to my practice over 20 years of experience supporting
                 vulnerable clients in various settings, including the charity
@@ -941,156 +922,243 @@
             </div>
           </div>
         </section>
-        <hr />
-        
-<!-- Testimonial Section -->
-<section id="testimonial" class="container my-5">
-  <h3 class="text-center my-4">Testimonials</h3>
-  <!-- First testimonial displayed by default -->
-  <div class="text-center">
-    <blockquote class="blockquote">
-      <p class="mb-4">
-        "Darren possesses an extraordinary gift for holding space that goes beyond the ordinary. 
-        His deep empathy and sensitivity create an atmosphere where individuals genuinely feel 
-        heard and seen. In the realm of mental health, where vulnerability is paramount, 
-        Darren's ability to foster a sense of psychological safety is truly exceptional."
-      </p>
-      <footer class="blockquote-footer">
-        Sophia, Founder and CEO Mendable. Registered Mental Health Nurse.
-      </footer>
-    </blockquote>
-    <!-- Button to show more testimonials -->
-    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#moreTestimonials" aria-expanded="false" aria-controls="moreTestimonials">
-      Read More Testimonials
-    </button>
-  </div>
-  <!-- Additional testimonials hidden by default -->
-  <div class="collapse" id="moreTestimonials">
-    <div class="container">
-      <blockquote class="blockquote text-center mt-4">
-        <p class="mb-4">
-          "As I have been working with Darren for the past two and a half years I have come to know someone who not only has a great range as a trained therapist, but also experienced guidance and activation through spiritual guidance. Darren truly leads, by intuition. He has great capacity to provide insights that are understandable and relatable to my own experience and journey. He plants seeds for me to care for in my own way and understanding."
-        </p>
-        <footer class="blockquote-footer">Rod Lamborn. Cinematographer.</footer>
-      </blockquote>
-      <!-- Add more testimonials as needed -->
+        <hr class="hr" />
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="container my-5">
+          <h3 class="text-center my-4">Testimonials</h3>
+          <!-- First testimonial displayed by default -->
+          <div class="text-center">
+            <blockquote class="blockquote">
+              <p class="mb-4">
+                "Darren possesses an extraordinary gift for holding space that
+                goes beyond the ordinary. His deep empathy and sensitivity
+                create an atmosphere where individuals genuinely feel heard and
+                seen. In the realm of mental health, where vulnerability is
+                paramount, Darren's ability to foster a sense of psychological
+                safety is truly exceptional."
+              </p>
+              <footer class="blockquote-footer">
+                Sophia, Founder and CEO Mendable. Registered Mental Health
+                Nurse.
+              </footer>
+            </blockquote>
+            <!-- Button to show more testimonials -->
+            <button
+              class="btn btn-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#moreTestimonials"
+              aria-expanded="false"
+              aria-controls="moreTestimonials"
+            >
+              Read More Testimonials
+            </button>
+          </div>
+          <!-- Additional testimonials hidden by default -->
+          <div class="collapse" id="moreTestimonials">
+            <div class="container">
+              <blockquote class="blockquote text-center mt-4">
+                <p class="mb-4">
+                  "As I have been working with Darren for the past two and a
+                  half years I have come to know someone who not only has a
+                  great range as a trained therapist, but also experienced
+                  guidance and activation through spiritual guidance. Darren
+                  truly leads, by intuition. He has great capacity to provide
+                  insights that are understandable and relatable to my own
+                  experience and journey. He plants seeds for me to care for in
+                  my own way and understanding."
+                </p>
+                <footer class="blockquote-footer">
+                  Rod Lamborn. Cinematographer.
+                </footer>
+              </blockquote>
+              <!-- Add more testimonials as needed -->
+            </div>
+          </div>
+        </section>
+        <hr class="hr" />
+        <!-- Contact section -->
+        <section id="contact" aria-labelledby="contact-form-heading">
+          <div class="container my-5">
+            <div class="text-center mb-4">
+              <h3 id="contact-form-heading" class="mb-3">
+                Work with me online from anywhere
+              </h3>
+              <p class="mb-4">I look forward to hearing from you.</p>
+            </div>
+            <!-- Contact Form -->
+            <section aria-labelledby="contact-form-heading">
+              <div class="container my-5">
+                <form action="https://formspree.io/f/{form_id}" method="post">
+                  <!-- Name Field -->
+                  <div class="mb-3">
+                    <label for="nameInput" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nameInput"
+                      name="name"
+                      required=""
+                    />
+                  </div>
+                  <!-- Email Field -->
+                  <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailInput"
+                      name="_replyto"
+                      required=""
+                    />
+                  </div>
+                  <!-- Phone Field -->
+                  <div class="mb-3">
+                    <label for="phoneInput" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneInput"
+                      name="phone"
+                    />
+                  </div>
+                  <!-- Identity Issue Dropdown -->
+                  <div class="mb-3">
+                    <label for="identityIssueSelect" class="form-label"
+                      >Identity Issue</label
+                    >
+                    <select
+                      id="identityIssueSelect"
+                      class="form-select"
+                      name="identity_issue"
+                      required=""
+                    >
+                      <option value="">Select an Issue</option>
+                      <option value="race-culture">Race and Culture</option>
+                      <option value="neurodiversity">Neurodiversity</option>
+                      <option value="lgbtq">LGBTQ+</option>
+                      <option value="aces">ACEs</option>
+                      <option value="spiritual">Spiritual</option>
+                      <option value="not-sure">Not Sure</option>
+                    </select>
+                  </div>
+                  <!-- Message Field -->
+                  <div class="mb-3">
+                    <label for="messageTextarea" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="messageTextarea"
+                      name="message"
+                      rows="4"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-dark">Send</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <!-- Contact Information -->
+            <div class="text-center mt-4">
+              <p class="mb-0">Email me directly at:</p>
+              <a
+                href="mailto:info@darrenpeters.uk"
+                class="btn btn-dark btn-sm mb-2"
+                role="button"
+                aria-label="Email info@darrenpeters.uk"
+                >info@darrenpeters.uk</a
+              >
+              <!-- Social Media Icons -->
+              <nav class="social-nav">
+                <a
+                  href="https://www.instagram.com/darren_peters369/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  class="me-2"
+                ></a>
+                <a
+                  href="https://www.threads.net/@darren_peters369"
+                  target="_blank"
+                  aria-label="Threads"
+                ></a>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <!-- Feedback Section -->
+        <section
+          class="p-3"
+          style="
+            background-image: url('images/feedback-bg.jpeg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            <h2 id="feedback-heading" class="text-center">
+              Your Feedback is Valued
+            </h2>
+            <p class="text-center">
+              Please share your thoughts about your experience of using this
+              website with the link provided below.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="#home"
+                class="btn btn-dark"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-describedby="feedback-heading"
+                >Provide Feedback</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
-  </div>
-</section>
-
-
-        <hr />
-
-<!-- Contact section -->
-<section id ="contact" aria-labelledby="contact-form-heading">
-  <div class="container my-5">
-    <div class="text-center mb-4">
-      <h3 id="contact-form-heading" class="mb-3">Work with me online from anywhere</h3>
-      <p class="mb-4">I look forward to hearing from you.</p>
-    </div>
-    
-<!-- Contact Form -->
-<section aria-labelledby="contact-form-heading">
-  <div class="container my-5">
-    <form action="https://formspree.io/f/{form_id}" method="POST">
-      <!-- Name Field -->
-      <div class="mb-3">
-        <label for="nameInput" class="form-label">Name</label>
-        <input type="text" class="form-control" id="nameInput" name="name" required>
-      </div>
-      <!-- Email Field -->
-      <div class="mb-3">
-        <label for="emailInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="emailInput" name="_replyto" required>
-      </div>
-      <!-- Phone Field -->
-      <div class="mb-3">
-        <label for="phoneInput" class="form-label">Phone</label>
-        <input type="tel" class="form-control" id="phoneInput" name="phone">
-      </div>
-      <!-- Identity Issue Dropdown -->
-      <div class="mb-3">
-        <label for="identityIssueSelect" class="form-label">Identity Issue</label>
-        <select id="identityIssueSelect" class="form-select" name="identity_issue" required>
-          <option value="">Select an Issue</option>
-          <option value="race-culture">Race and Culture</option>
-          <option value="neurodiversity">Neurodiversity</option>
-          <option value="lgbtq">LGBTQ+</option>
-          <option value="aces">ACEs</option>
-          <option value="spiritual">Spiritual</option>
-          <option value="not-sure">Not Sure</option>
-        </select>
-      </div>
-      <!-- Message Field -->
-      <div class="mb-3">
-        <label for="messageTextarea" class="form-label">Message</label>
-        <textarea class="form-control" id="messageTextarea" name="message" rows="4" required></textarea>
-      </div>
-      <!-- Submit Button -->
-      <div class="text-center">
-        <button type="submit" class="btn btn-dark">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
-
-
-    
-    <!-- Contact Information -->
-    <div class="text-center mt-4">
-      <p class="mb-0">Email me directly at:</p>
-      <a href="mailto:info@darrenpeters.uk" class="btn btn-dark btn-sm mb-2" role="button" aria-label="Email info@darrenpeters.uk">info@darrenpeters.uk</a>
-      
-
-      
-      <!-- Social Media Icons -->
-      <nav class="social-nav">
-        <a href="https://www.instagram.com/darren_peters369/" target="_blank" aria-label="Instagram" class="me-2">
-          <i class="bi bi-instagram" role="img" aria-label="Instagram"></i>
-        </a>
-        <a href="https://www.threads.net/@darren_peters369" target="_blank" aria-label="Threads">
-          <i class="bi bi-threads" role="img" aria-label="Threads"></i>
-        </a>
-      </nav>
-    </div>
-  </div>
-</section>
-
-
-<!-- Feedback Section -->
-<section class="p-3" style="background-image: url('images/feedback-bg.jpeg'); background-size: cover; background-position: center;">
-  <div class="container">
-    <h2 id="feedback-heading" class="text-center">Your Feedback is Valued </h2>
-    <p class="text-center">
-      Please share your thoughts about your experience of using this website with the link provided below.
-    </p>
-    <div class="d-flex justify-content-center">
-      <a href="#home" class="btn btn-dark" target="_blank" rel="noopener noreferrer" aria-describedby="feedback-heading">
-        Provide Feedback
-      </a>
-    </div>
-  </div>
-</section>
-  
-    </div>
-
-    <section class="text-center container-fluid mt-3 p-3 position-relative" style="background-image: url('images/home.jpeg'); background-size: cover; background-position: center; height: 500px;">
+    <section
+      class="text-center container-fluid mt-3 p-3 position-relative"
+      style="
+        background-image: url('images/home.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+      "
+    >
       <!-- Accessible dark overlay to enhance text contrast -->
-      <div class="position-absolute top-0 bottom-0 start-0 end-0 bg-dark" style="opacity: 0.7;"></div>
-      
-      <div class="d-flex h-100 align-items-center justify-content-center position-relative">
+      <div
+        class="position-absolute top-0 bottom-0 start-0 end-0 bg-dark"
+        style="opacity: 0.7"
+      ></div>
+      <div
+        class="d-flex h-100 align-items-center justify-content-center position-relative"
+      >
         <div class="p-4 rounded">
-          <h2 id="call-to-action" class="text-white p-3" style="background-color: rgba(0, 0, 0, 0.6); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); border-radius: 10px;">
+          <h2
+            id="call-to-action"
+            class="text-white p-3"
+            style="
+              background-color: rgba(0, 0, 0, 0.6);
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              border-radius: 10px;
+            "
+          >
             Let's take the next step together
           </h2>
-          
-          <a href="#contact" class="btn btn-light btn-lg mt-3" role="button" aria-describedby="call-to-action">Contact Darren</a>
+          <a
+            href="#contact"
+            class="btn btn-light btn-lg mt-3"
+            role="button"
+            aria-describedby="call-to-action"
+            >Contact Darren</a
+          >
         </div>
       </div>
     </section>
-    
-    
-    
     <!-- Back to top of page button -->
     <button
       type="button"
@@ -1099,11 +1167,9 @@
       aria-label="Go to top of page"
       style="position: fixed; bottom: 20px; right: 20px; display: none"
     >
-    &uarr; Top
+      ↑ Top
     </button>
-
     <!-- Footer -->
-
     <footer class="bg-dark text-white text-center text-lg-start py-3">
       <div class="container">
         <!-- Grid container -->
@@ -1111,63 +1177,71 @@
           <!-- Grid column for logo and contact -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="py-2">
-              <a class="navbar-brand text-white" href="#" aria-label="Homepage">
-                <strong>Darren Peters</strong>
-              </a>
+              <a class="navbar-brand text-white" href="#" aria-label="Homepage"
+                ><strong>Darren Peters</strong></a
+              >
               <p>London, England</p>
-              <a href="mailto:info@darrenpeters.uk" class="text-reset" style="text-decoration: underline;">
-                info@darrenpeters.uk
-              </a>
+              <a
+                href="mailto:info@darrenpeters.uk"
+                class="text-reset"
+                style="text-decoration: underline"
+                >info@darrenpeters.uk</a
+              >
             </div>
           </div>
-          
           <!-- Grid column for copyright -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="py-2">
               <p>Copyright © 2024 DarrenPeters.uk</p>
             </div>
           </div>
-          
           <!-- Grid column for social media links -->
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="py-2">
               <p>My Social Media:</p>
-              <a href="https://www.instagram.com/darren_peters369/" class="text-white me-2" target="_blank" aria-label="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="https://www.threads.net/@darren_peters369" class="text-white" target="_blank" aria-label="Threads">
-                <i class="bi bi-threads"></i>
-              </a>
+              <a
+                href="https://www.instagram.com/darren_peters369/"
+                class="text-white me-2"
+                target="_blank"
+                aria-label="Instagram"
+              ></a>
+              <a
+                href="https://www.threads.net/@darren_peters369"
+                class="text-white"
+                target="_blank"
+                aria-label="Threads"
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    
-
-
-    <button id="backToTopBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary position-fixed bottom-0 end-0 m-3" aria-label="Back to Top">
-      <i class="bi bi-arrow-up"></i> Top
+    <button
+      id="backToTopBtn"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-3"
+      aria-label="Back to Top"
+    >
+      Top
     </button>
-    
-
-    </div>
     <!-- JS script for top of page button -->
 
     <script>
-window.onscroll = function() {scrollFunction()};
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-function scrollFunction() {
-  var mybutton = document.getElementById("backToTopBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
+      function scrollFunction() {
+        var mybutton = document.getElementById("backToTopBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
     </script>
-
-    
   </body>
 </html>
