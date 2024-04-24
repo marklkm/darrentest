@@ -72,6 +72,10 @@ li,
   color: #ffc107 !important;
 }
 
+.social-icon {
+  color: #ffc107; /* Gold color */
+}
+
 /*
 .accordion-button {
   color: black !important;
