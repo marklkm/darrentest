@@ -178,3 +178,25 @@ h6 {
 .social-nav i {
   color: #000000;  /* black color */
 }
+
+/* background image for home section */
+
+.background-image {
+  background-image: url('images/PeacefulWallpaper.jpeg');
+  background-size: cover; /* Cover the entire area of the div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 75vh; /* Adjust height as necessary, e.g., 100vh for full screen */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.text-on-image {
+  color: white; /* Ensure text color contrasts well with the background image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text for better readability */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the text background */
+  max-width: 80%; /* Limit width of the text box */
+  margin: auto; /* Center the text box if within a larger div */
+}
