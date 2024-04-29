@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Darren Peters - Psychotherapy</title>
+    <title>Darren Peters - Holistic Psychotherapy</title>
     <link rel="shortcut icon" href="favicon.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <!-- JS Scripts-->
-
+    <script src="scripts.js" async></script>
     <script src="lazysizes.min.js" async></script>
     <!-- Bootstrap JS -->
 
@@ -200,19 +200,21 @@
             </p>
             <!-- Button trigger for collapsible content -->
             <button
-              class="btn btn-dark mt-3 mb-3"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseNeurodiversity"
-              aria-expanded="false"
-              aria-controls="collapseNeurodiversity"
-            >
-              Read More
+            class="btn btn-dark mt-3 mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNeurodiversity"
+            aria-expanded="false"
+            aria-controls="collapseNeurodiversity"
+            onclick="toggleReadMore('collapseNeurodiversity', this)"
+          >
+            Read More
+          </button>
               <!-- Removed brackets for clarity and accessibility -->
             </button>
             <!-- Collapsible content -->
-            <div class="collapse" id="collapseNeurodiversity">
-              <h4 class="align-center">Neurodivergent Minds</h4>
+            <div class="collapse" id="collapseNeurodiversity" aria-labelledby="neurodiversityHeading">
+              <h4 id="neurodiversityHeading">Neurodivergent Minds</h4>
               <img
                 src="images/neurodiversity-section.jpeg"
                 alt="Neurodiversity section"
@@ -1090,8 +1092,11 @@
             Your feedback is valued
           </h2>
           <p class="text-center">
-            Please share your thoughts about your experience of using this
-            website with the link provided below.
+            Darren Peters welcomes your feedback on the accessibility of this
+            website. If you encounter accessibility barriers on the Darren
+            Peters - Your Safe Space for Holistic Psychotherapy website, please
+            let Darren know by completing the feedback form in the link provided
+            below.
           </p>
           <div class="d-flex justify-content-center">
             <a
@@ -1100,7 +1105,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-describedby="feedback-heading"
-              >Provide Feedback</a
+              >Feedback Form</a
             >
           </div>
         </div>
@@ -1182,12 +1187,20 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="py-2">
               <p>Copyright &copy; 2024 DarrenPeters.uk</p>
+              <p>
+                <a
+                  href="home"
+                  class="text-white"
+                  style="text-decoration: underline"
+                  >Accessibility Statement</a
+                >
+              </p>
             </div>
           </div>
           <!-- Grid column for social media links -->
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="py-2">
-              <p>My Social Media:</p>
+              <p>My Social Media</p>
               <a
                 href="https://www.instagram.com/darren_peters369/"
                 class="text-white me-2"
