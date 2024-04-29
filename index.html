@@ -22,6 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <!-- JS Scripts-->
+
     <script src="scripts.js" async></script>
     <script src="lazysizes.min.js" async></script>
     <!-- Bootstrap JS -->
@@ -88,6 +89,7 @@
         </div>
       </div>
     </nav>
+
     <!-- End Navbar -->
     <!-- Page Container -->
     <div class="container">
@@ -102,12 +104,10 @@
           </h1>
         </div>
       </section>
-
       <section class="container my-5">
         <!-- Intro 1 -->
         <div class="row">
           <!-- Text column (8 units wide) -->
-
           <div class="col-md-8">
             <h2 class="mb-4">Welcome to my Psychotherapy Practice</h2>
             <p class="lead">
@@ -200,20 +200,23 @@
             </p>
             <!-- Button trigger for collapsible content -->
             <button
-            class="btn btn-dark mt-3 mb-3"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseNeurodiversity"
-            aria-expanded="false"
-            aria-controls="collapseNeurodiversity"
-            onclick="toggleReadMore('collapseNeurodiversity', this)"
-          >
-            Read More
-          </button>
-              <!-- Removed brackets for clarity and accessibility -->
+              class="btn btn-dark mt-3 mb-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNeurodiversity"
+              aria-expanded="false"
+              aria-controls="collapseNeurodiversity"
+              onclick="toggleReadMore('collapseNeurodiversity', this)"
+            >
+              Read More
             </button>
+            <!-- Removed brackets for clarity and accessibility -->
             <!-- Collapsible content -->
-            <div class="collapse" id="collapseNeurodiversity" aria-labelledby="neurodiversityHeading">
+            <div
+              class="collapse"
+              id="collapseNeurodiversity"
+              aria-labelledby="neurodiversityHeading"
+            >
               <h4 id="neurodiversityHeading">Neurodivergent Minds</h4>
               <img
                 src="images/neurodiversity-section.jpeg"
@@ -258,11 +261,10 @@
                     thinking.
                   </li>
                   <li class="list-group-item fw-light">
-                    <strong>Tourette's Unique Perspectives:</strong>
-                    Tourette's may be associated with unique motor and vocal
-                    tics, but it can also bring about heightened creativity and
-                    unique perspectives, as seen in many accomplished
-                    individuals.
+                    <strong>Tourette's Unique Perspectives:</strong> Tourette's
+                    may be associated with unique motor and vocal tics, but it
+                    can also bring about heightened creativity and unique
+                    perspectives, as seen in many accomplished individuals.
                   </li>
                   <li class="list-group-item fw-light">
                     <strong>Dyslexia's Visual Thinking:</strong> Dyslexia often
@@ -347,13 +349,18 @@
               data-bs-target="#collapseAscension"
               aria-expanded="false"
               aria-controls="collapseAscension"
+              onclick="toggleReadMore('collapseAscension', this)"
             >
               Read More
-              <!-- Removed brackets for clarity and accessibility -->
             </button>
+
             <!-- Collapsible content -->
-            <div class="collapse" id="collapseAscension">
-              <h4 class="align-center">Ascension/Spiritual Identity</h4>
+            <div
+              class="collapse"
+              id="collapseAscension"
+              aria-labelledby="ascensionHeading"
+            >
+              <h4 id="ascensionHeading">Ascension/Spiritual Identity</h4>
               <figure class="figure">
                 <img
                   src="images/acension-spirital.jpeg"
@@ -495,13 +502,17 @@
                 data-bs-target="#collapseRace"
                 aria-expanded="false"
                 aria-controls="collapseRace"
+                onclick="toggleReadMore('collapseRace', this)"
               >
                 Read More
-                <!-- Removed brackets for clarity and accessibility -->
               </button>
               <!-- Collapsible content -->
-              <div class="collapse" id="collapseRace">
-                <h4 class="align-center">
+              <div
+                class="collapse"
+                id="collapseRace"
+                aria-labelledby="raceHeading"
+              >
+                <h4 id="raceHeading">
                   Exploring the Impact of RACE/Racial Identity
                 </h4>
                 <img
@@ -624,13 +635,17 @@
                 data-bs-target="#collapseLGBT"
                 aria-expanded="false"
                 aria-controls="collapseLGBT"
+                onclick="toggleReadMore('collapseLGBT', this)"
               >
                 Read More
-                <!-- Removed brackets for clarity and accessibility -->
               </button>
               <!-- Collapsible content -->
-              <div class="collapse" id="collapseLGBT">
-                <h4 class="align-center">LGBTQ Identity</h4>
+              <div
+                class="collapse"
+                id="collapseLGBT"
+                aria-labelledby="lgbtHeading"
+              >
+                <h4 id="lgbtHeading">LGBTQ Identity</h4>
                 <img
                   src="images/LGBT.jpeg"
                   alt="LGBT identity section"
@@ -747,15 +762,19 @@
                     data-bs-target="#collapseACE"
                     aria-expanded="false"
                     aria-controls="collapseACE"
+                    onclick="toggleReadMore('collapseACE', this)"
                   >
                     Read More
-                    <!-- Removed brackets for clarity and accessibility -->
                   </button>
+
                   <!-- Collapsible content -->
-                  <div class="collapse" id="collapseACE">
-                    <h4 class="align-center">
-                      Understanding Adverse Childhood Experiences (ACEs): A
-                      Journey to Healing
+                  <div
+                    class="collapse"
+                    id="collapseACE"
+                    aria-labelledby="aceHeading"
+                  >
+                    <h4 id="aceHeading">
+                      Adverse Childhood Experiences (ACEs)
                     </h4>
                     <img
                       src="images/ACE1.jpeg"
@@ -957,7 +976,6 @@
         </div>
       </section>
       <hr class="hr" />
-
       <!-- Contact section -->
       <section id="contact" aria-labelledby="contact-form-heading">
         <div class="container my-5">
@@ -967,7 +985,6 @@
             </h3>
             <p class="mb-4">I look forward to hearing from you.</p>
           </div>
-
           <!-- Contact Form -->
           <section aria-labelledby="contact-form-heading">
             <h4>Contact Form</h4>
@@ -1045,7 +1062,6 @@
               </form>
             </div>
           </section>
-
           <!-- Contact Information -->
           <div class="text-center mt-4">
             <p class="mb-0">Email me directly at:</p>
@@ -1063,17 +1079,13 @@
                 target="_blank"
                 aria-label="Instagram"
                 class="me-2"
-              >
-                <i class="bi bi-instagram"></i>
-              </a>
+              ></a>
               <a
                 href="https://www.threads.net/@darren_peters369"
                 target="_blank"
                 aria-label="Threads"
+                ><!-- Example icon --></a
               >
-                <i class="bi bi-threads"></i>
-                <!-- Example icon -->
-              </a>
             </nav>
           </div>
         </div>
@@ -1151,7 +1163,6 @@
       </div>
     </section>
     <!-- Back to top of page button -->
-
     <button
       type="button"
       class="btn btn-primary position-fixed bottom-0 end-0 m-3"
@@ -1161,7 +1172,6 @@
     >
       ↑ Top
     </button>
-
     <!-- Footer -->
     <footer class="bg-dark text-white text-center text-lg-start py-3">
       <div class="container">
@@ -1170,23 +1180,22 @@
           <!-- Grid column for logo and contact -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="py-2">
-              <a class="navbar-brand text-white" href="#" aria-label="Homepage">
-                <strong>Darren Peters</strong>
-              </a>
+              <a class="navbar-brand text-white" href="#" aria-label="Homepage"
+                ><strong>Darren Peters</strong></a
+              >
               <p>London, England</p>
               <a
                 href="mailto:info@darrenpeters.uk"
                 class="text-reset"
                 style="text-decoration: underline"
+                >info@darrenpeters.uk</a
               >
-                info@darrenpeters.uk
-              </a>
             </div>
           </div>
           <!-- Grid column for copyright -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="py-2">
-              <p>Copyright &copy; 2024 DarrenPeters.uk</p>
+              <p>Copyright © 2024 DarrenPeters.uk</p>
               <p>
                 <a
                   href="home"
@@ -1206,24 +1215,19 @@
                 class="text-white me-2"
                 target="_blank"
                 aria-label="Instagram"
-              >
-                <i class="bi bi-instagram social-icon"></i>
-              </a>
+              ></a>
               <a
                 href="https://www.threads.net/@darren_peters369"
                 class="text-white"
                 target="_blank"
                 aria-label="Threads"
+                ><!-- Assuming there is an icon for Threads --></a
               >
-                <i class="bi bi-threads social-icon"></i>
-                <!-- Assuming there is an icon for Threads -->
-              </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
     <!-- Back to Top Button -->
     <button
       type="button"
