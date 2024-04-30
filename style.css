@@ -14,21 +14,6 @@ html, body {
 }
 
 
-
-
-/* Example media query for devices with a max-width of 600px */
-@media (max-width: 600px) {
-  #map {
-    height: 30vh; /* Smaller height on small devices */
-  }
-}
-
-
-/* General Styles */
-.custom-popup .leaflet-popup-content {
-  width: auto !important; /* Adjust width as needed */
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: white !important;
   background-color: #212529;
