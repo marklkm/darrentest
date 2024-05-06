@@ -201,3 +201,35 @@ h6 {
   background-color: #eee; /* Slightly grey background for contrast */
 }
 
+
+.card-body {
+  background-color: #ffffff; /* Ensure the background is light */
+}
+
+.text-start {
+  color: #000000; /* Dark color for high contrast against light background */
+}
+
+.text-end {
+  color: #000000; /* Dark color for high contrast against light background */
+  background-color: #e0e0e0; /* Light grey background for user messages */
+  padding: 5px;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.card-footer {
+  background-color: #f8f9fa; /* Slightly off-white footer to differentiate area */
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Ensuring buttons are also highly visible */
+}
+
+/* Additional styles for clarity and usability */
+.card-body p {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
