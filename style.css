@@ -186,4 +186,18 @@ h6 {
   margin: auto; /* Center the text box if within a larger div */
 }
 
+#chatbox p {
+  margin: 0.5em 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+#chatbox p.text-end {
+  background-color: #dcf8c6; /* Light green for user messages */
+}
+
+#chatbox {
+  background-color: #eee; /* Slightly grey background for contrast */
+}
 
