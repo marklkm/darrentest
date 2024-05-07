@@ -186,6 +186,8 @@ h6 {
   margin: auto; /* Center the text box if within a larger div */
 }
 
+
+/* Chat Bot css */
 #chatbox p {
   margin: 0.5em 1em;
   padding: 0.5em;
@@ -201,6 +203,8 @@ h6 {
   background-color: #eee; /* Slightly grey background for contrast */
 }
 
+
+/* card body */
 
 .card-body {
   background-color: #ffffff; /* Ensure the background is light */
