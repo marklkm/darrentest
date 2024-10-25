@@ -1042,11 +1042,18 @@
               </h3>
               <p class="mb-4">I look forward to hearing from you.</p>
             </div>
+
             <!-- Contact Form -->
             <section aria-labelledby="contact-form-heading">
               <h4>Contact Form</h4>
               <div class="container my-5">
-                <form action="home" method="post">
+                <form action="https://formspree.io/f/xkndkjeo" method="POST">
+                  <!-- Redirect After Submission -->
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://darrenpeters.vercel.app/thank-you"
+                  />
                   <!-- Name Field -->
                   <div class="mb-3">
                     <label for="nameInput" class="form-label">Name</label>
@@ -1055,7 +1062,7 @@
                       class="form-control"
                       id="nameInput"
                       name="name"
-                      required=""
+                      required
                     />
                   </div>
                   <!-- Email Field -->
@@ -1066,7 +1073,7 @@
                       class="form-control"
                       id="emailInput"
                       name="_replyto"
-                      required=""
+                      required
                     />
                   </div>
                   <!-- Phone Field -->
@@ -1088,7 +1095,7 @@
                       id="identityIssueSelect"
                       class="form-select"
                       name="identity_issue"
-                      required=""
+                      required
                     >
                       <option value="">Select an Issue</option>
                       <option value="race-culture">Race and Culture</option>
@@ -1109,7 +1116,7 @@
                       id="messageTextarea"
                       name="message"
                       rows="4"
-                      required=""
+                      required
                     ></textarea>
                   </div>
                   <!-- Submit Button -->
@@ -1119,6 +1126,7 @@
                 </form>
               </div>
             </section>
+
             <!-- Contact Information -->
             <div class="text-center mt-4">
               <p class="mb-0">Email me directly at:</p>
@@ -1344,32 +1352,6 @@
             behavior: "smooth",
           });
         });
-    </script>
-
-    <!-- Chat AI bot script -->
-    <script>
-      function sendChat(event) {
-        event.preventDefault();
-        const inputBox = document.getElementById("userInput");
-        const chatbox = document.getElementById("chatbox");
-        const userText = inputBox.value;
-
-        // Display user's message
-        const userMsg = document.createElement("p");
-        userMsg.className = "text-end text-muted";
-        userMsg.textContent = userText;
-        chatbox.appendChild(userMsg);
-
-        // Simulate bot's response
-        const botMsg = document.createElement("p");
-        botMsg.className = "text-start";
-        botMsg.textContent = `Echoing: ${userText}`;
-        chatbox.appendChild(botMsg);
-
-        // Clear input box and scroll chat to the latest message
-        inputBox.value = "";
-        chatbox.scrollTop = chatbox.scrollHeight;
-      }
     </script>
   </body>
 </html>
