@@ -1044,14 +1044,17 @@
             </div>
 
             <!-- Contact Form -->
+            <!-- Contact Form -->
             <section aria-labelledby="contact-form-heading">
               <h4>Contact Form</h4>
               <div class="container my-5">
-                <form
-                  action="https://formspree.io/f/xkndkjeo"
-                  method="POST"
-                  onsubmit="handleFormSubmit(event)"
-                >
+                <form action="https://formspree.io/f/xkndkjeo" method="POST">
+                  <!-- Redirect After Submission -->
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://darrenpeters.vercel.app/thank-you.html"
+                  />
                   <!-- Name Field -->
                   <div class="mb-3">
                     <label for="nameInput" class="form-label">Name</label>
@@ -1350,34 +1353,6 @@
             behavior: "smooth",
           });
         });
-    </script>
-    <!-- redirect contact form to thank-you html  -->
-
-    <script>
-      function handleFormSubmit(event) {
-        event.preventDefault(); // Prevent default form submission
-        const form = event.target;
-
-        fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            if (response.ok) {
-              window.location.href =
-                "https://darrenpeters.vercel.app/thank-you.html"; // Redirect on success
-            } else {
-              alert("Oops! There was a problem with your submission.");
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            alert("Oops! There was an error submitting the form.");
-          });
-      }
     </script>
   </body>
 </html>
